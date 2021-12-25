@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gridviewtesting/screens/homepage.dart';
+import 'package:gridviewtesting/screen/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,13 +20,13 @@ class MyApp extends StatelessWidget {
         dividerColor: Colors.black.withOpacity(0.8),
         primaryTextTheme:
         Theme.of(context).primaryTextTheme.apply(bodyColor: Colors.white),
-        accentColor: Colors.blue, // needs to be MaterialColor
-        unselectedWidgetColor: Colors.grey, // needs to be MaterialColor
+        // accentColor: Colors.blue, // needs to be MaterialColor
+        // unselectedWidgetColor: Colors.grey, // needs to be MaterialColor
         iconTheme: IconThemeData(
           color: Colors.white,
         ),
       ),
-      home:  MyHomePage(appTitle:appTitle),
+      home:  MyHomepage(appTitle:appTitle),
     );
   }
 }
